@@ -45,5 +45,8 @@
   },
   "engines": {
     "node": "18.x"
+  },
+  "dependencies": {
+    "firebase-tools": "^11.23.1"
   }
 }
