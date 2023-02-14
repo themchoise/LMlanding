@@ -1,4 +1,3 @@
-import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
   name: 'LMTech',
@@ -10,7 +9,7 @@ const CONFIG = {
   title: 'LMTECH Soluciones Informaticas',
   description:
     'Soluciones Informaticas',
-  defaultImage: defaultImage,
+
 
   defaultTheme: 'light', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
