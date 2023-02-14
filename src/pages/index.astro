@@ -1,0 +1,102 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    callToAction2={{ text: 'Ver Mas', href: '#features' }}
+    image={{ src: import('~/assets/images/newLM.png'), alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      LMTECH
+    </Fragment>
+
+    <Fragment slot="subtitle">
+    Soluciones Informaticas
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    highlight="¿Que Hacemos?"
+    title=""
+    subtitle=""
+    items={[
+      [
+        {
+          title: 'Reparaciones de Pc',
+          description:
+            'Reparaciones de PC / Notebook / ALL IN ONE A domicilio',
+          icon: 'ph:computer-tower',
+        },
+        {
+          title: 'Instalacion de redes',
+          description:
+            'Se Instalan redes papurri que mas queres q te diga, el chori va con criolla',
+          icon: 'mdi:ethernet',
+        },
+        {
+          title: 'Soporte Remoto',
+          description:
+            'Asistencia Remota mediante Team viewer',
+          icon: 'tabler:list-check',
+        },
+      ],
+      [
+        {
+          title: 'Diseño landing page',
+          description:
+            'Diseñamos sitios web estaticos para mostrar informacion de su negocio',
+          icon: 'tabler:rocket',
+        },
+        {
+          title: 'Software a medida',
+          description:
+            'Diseñamos software a medida',
+          icon: 'tabler:arrows-right-left',
+        },
+       
+      ],
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+
+  <!-- Content Widget **************** -->
+
+
+  <!-- Steps Widget ****************** -->
+
+ 
+
+  <!-- Features2 Widget ************** -->
+
+
+  <!-- HighlightedPosts Widget ******* -->
+
+
+  <!-- FAQs Widget ******************* -->
+
+  <!-- CallToAction Widget *********** -->
+
+</Layout>
