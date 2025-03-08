@@ -3,6 +3,7 @@ import Layout from '~/layouts/BaseLayout.astro';
 
 import Footer from '~/components/widgets/Footer.astro';
 import Announcement from '~/components/widgets/Announcement.astro';
+import Content from '~/components/widgets/Content.astro';
 
 import {  footerData } from '~/data';
 
@@ -22,6 +23,16 @@ const { meta } = Astro.props;
    <main>
     <slot />
   </main>
+  <slot name="content">
+    <Content 
+    title={'Contacto'}
+    subtitle={'soporte.lmtech@gmail.com'}
+    
+
+    />
+    
+  </slot>
+  
   <slot name="footer">
     <Footer {...footerData} />
   </slot>

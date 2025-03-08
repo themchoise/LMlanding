@@ -1,7 +1,9 @@
 
-const CONFIG = {
-  name: 'LMTech',
+let a = new Date();
+let year = a.getFullYear();
 
+const CONFIG = {
+  name: `© ${year} | LMTech  Soluciones Informáticas | Todos los derechos reservados`,
   origin: 'https://www.lmtech.com.ar',
   basePathname: '/',
   trailingSlash: false,
@@ -11,7 +13,7 @@ const CONFIG = {
     'Soluciones Informaticas',
 
 
-  defaultTheme: 'light', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: 'dark', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   language: 'es',
   textDirection: 'ltr',
